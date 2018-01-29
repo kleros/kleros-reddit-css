@@ -3,31 +3,47 @@
 @font-face {
   font-family: 'Metropolis';
   font-style: normal;
-  font-weight: light;
-  src: url('metropolis-light-webfont.woff2') format('woff2'),
-    url('metropolis-light-webfont.woff') format('woff');
+  font-weight: lighter;
+  /* stylelint-disable declaration-colon-newline-after, indentation */
+  src: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/0c2b11ff/assets/fonts/metropolis-light-webfont.woff2')
+      format('woff2'),
+    url('https://cdn.rawgit.com/kleros/kleros-reddit-css/0c2b11ff/assets/fonts/metropolis-light-webfont.woff')
+      format('woff');
+  /* stylelint-enable */
 }
 
 @font-face {
   font-family: 'Metropolis';
   font-style: normal;
   font-weight: normal;
-  src: url('metropolis-regular-webfont.woff2') format('woff2'),
-    url('metropolis-regular-webfont.woff') format('woff');
+  /* stylelint-disable declaration-colon-newline-after, indentation */
+  src: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/0c2b11ff/assets/fonts/metropolis-regular-webfont.woff2')
+      format('woff2'),
+    url('https://cdn.rawgit.com/kleros/kleros-reddit-css/0c2b11ff/assets/fonts/metropolis-regular-webfont.woff')
+      format('woff');
+  /* stylelint-enable */
 }
 
 @font-face {
   font-family: 'Metropolis';
   font-style: normal;
   font-weight: bold;
-  src: url('metropolis-bold-webfont.woff2') format('woff2'),
-    url('metropolis-bold-webfont.woff') format('woff');
+  /* stylelint-disable declaration-colon-newline-after, indentation */
+  src: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/0c2b11ff/assets/fonts/metropolis-bold-webfont.woff2')
+      format('woff2'),
+    url('https://cdn.rawgit.com/kleros/kleros-reddit-css/0c2b11ff/assets/fonts/metropolis-bold-webfont.woff')
+      format('woff');
+  /* stylelint-enable */
 }
 
 @font-face {
   font-family: 'Metropolis';
   font-style: italic;
   font-weight: normal;
-  src: url('metropolis-regularitalic-webfont.woff2') format('woff2'),
-    url('metropolis-regularitalic-webfont.woff') format('woff');
+  /* stylelint-disable declaration-colon-newline-after, indentation */
+  src: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/0c2b11ff/assets/fonts/metropolis-regularitalic-webfont.woff2')
+      format('woff2'),
+    url('https://cdn.rawgit.com/kleros/kleros-reddit-css/0c2b11ff/assets/fonts/metropolis-regularitalic-webfont.woff')
+      format('woff');
+  /* stylelint-enable */
 }

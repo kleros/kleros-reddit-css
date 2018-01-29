@@ -8,6 +8,6 @@
     "selector-list-comma-newline-after": "always-multi-line",
     "order/order": ["dollar-variables", "at-variables", "less-mixins", "custom-properties", "declarations", "at-rules", "rules"],
     "order/properties-alphabetical-order": true,
-    "declaration-colon-newline-after": null
+    "no-descending-specificity": null,
   }
 }
