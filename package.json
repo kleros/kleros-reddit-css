@@ -13,9 +13,9 @@
     "precommit": "yarn run lint",
     "cz": "git-cz",
     "start":
-      "yarn run build && node-sass-chokidar ./src/index.scss ./dist/index.css --output-style compressed --watch",
+      "yarn run build && node-sass-chokidar ./src/index.scss ./docs/index.css --output-style compressed --watch",
     "build":
-      "node-sass-chokidar ./src/index.scss ./dist/index.css --output-style compressed && postcss ./dist/index.css --use autoprefixer -r"
+      "node-sass-chokidar ./src/index.scss ./docs/index.css --output-style compressed && postcss ./docs/index.css --use autoprefixer -r"
   },
   "commitlint": {
     "extends": ["@commitlint/config-conventional"]
