@@ -127,6 +127,118 @@ body {
   box-shadow: 0 0 6px 0 rgba(71, 82, 93, 0.09), 0 0 1px 0 rgba(77, 78, 90, 0.08),
     0 2px 0 0 rgba(71, 82, 93, 0.09);
   /* stylelint-enable */
-  margin: 20px 310px + 20px 20px 20px;
+  margin: 20px 318.5px + 20px 20px 20px;
   padding: 16px 40px 16px 20px;
+}
+
+// Post
+.thing {
+  margin-bottom: 31px;
+
+  .rank {
+    margin-top: 24px;
+  }
+
+  .title {
+    color: #052e69;
+    font-size: 22px;
+    font-weight: lighter;
+
+    &:visited {
+      color: #052e69;
+      font-weight: bold;
+    }
+  }
+}
+
+// Likes container
+.midcol {
+  margin-right: 30px;
+}
+
+// Likes counter
+.score {
+  margin-top: 2px;
+
+  .link &.likes {
+    color: #1a1b23;
+  }
+}
+
+// Likes arrows
+.arrow {
+  height: 21px;
+  width: 22px;
+
+  &.login-required.access-required {
+    &.down {
+      background-image: url('../assets/images/triangle.png');
+      background-position: 0 0;
+      transform: rotate(180deg);
+    }
+
+    &.up {
+      background-image: url('../assets/images/triangle.png');
+      background-position: 0 0;
+    }
+
+    &.downmod {
+      background-image: url('../assets/images/selected-triangle.png');
+      background-position: 0 0;
+      transform: rotate(180deg);
+    }
+
+    &.upmod {
+      background-image: url('../assets/images/selected-triangle.png');
+      background-position: 0 0;
+    }
+  }
+}
+
+// Entry
+.entry {
+  padding-left: 22px;
+}
+
+// Taglines
+.tagline {
+  color: #b0b0b1;
+  margin: 5px 0;
+
+  a.author {
+    color: #1a1b23;
+    font-weight: bold;
+  }
+}
+
+// Share buttons
+.flat-list.buttons {
+  color: #b0b0b1;
+
+  li a {
+    font-weight: normal;
+  }
+
+  .bylink.comments {
+    color: #1a1b23;
+    font-weight: bold;
+  }
+}
+
+// Sidebar TODO
+.side {
+  margin: 20px 18.5px 0 0;
+}
+
+// Footer
+.footer-parent {
+  padding-top: 0;
+
+  .flat-vert.title {
+    color: #b0b0b1;
+  }
+
+  p.bottommenu {
+    color: #b0b0b1;
+  }
 }
