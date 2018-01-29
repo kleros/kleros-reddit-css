@@ -1,0 +1,45 @@
+body {
+  font-family: 'Metropolis', sans-serif;
+}
+
+// General header area
+#header {
+  background-color: #1a1b23;
+  height: 216px;
+}
+
+// Top subreddit list
+#sr-header-area {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  height: 26px;
+  line-height: 26px;
+
+  // My Subreddits
+  .dropdown.srdrop {
+    padding-left: 12px;
+  }
+
+  // Subreddit list
+  .sr-list {
+    margin-right: 56px;
+  }
+
+  // Text
+  span,
+  a {
+    color: #fff;
+    font-size: 9px;
+  }
+}
+
+// Edit subreddits link
+#sr-more-link {
+  background: none;
+}
+
+// Hot, new, rising, etc
+#header-bottom-left {
+  bottom: 0;
+  position: absolute;
+}
