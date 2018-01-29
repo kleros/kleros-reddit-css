@@ -1,3 +1,5 @@
+@import './_fonts.scss';
+
 body {
   font-family: 'Metropolis', sans-serif;
 }
@@ -76,16 +78,23 @@ body {
       display: inline-block;
       font-size: 13px;
       letter-spacing: 1px;
-      min-width: 72px;
+      margin: 0;
+      min-width: 52px;
+      padding: 0 10px;
       text-align: center;
       text-transform: uppercase;
 
       a {
         background: none;
         color: #fff;
+        display: inline-block;
         font-weight: normal;
+        height: 100%;
+        padding: 0;
+        width: 100%;
       }
 
+      &:hover,
       &.selected {
         background-color: rgba(255, 255, 255, 0.1);
 
@@ -136,7 +145,7 @@ body {
   margin-bottom: 31px;
 
   .rank {
-    margin-top: 24px;
+    margin-top: 24.5px;
   }
 
   .title {
@@ -153,6 +162,7 @@ body {
 
 // Likes container
 .midcol {
+  margin-left: 12px;
   margin-right: 30px;
 }
 
@@ -182,13 +192,15 @@ body {
       background-position: 0 0;
     }
 
-    &.downmod {
+    &.downmod,
+    &.down:hover {
       background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/selected-triangle.png');
       background-position: 0 0;
       transform: rotate(180deg);
     }
 
-    &.upmod {
+    &.upmod,
+    &.up:hover {
       background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/selected-triangle.png');
       background-position: 0 0;
     }
