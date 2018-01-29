@@ -172,24 +172,24 @@ body {
 
   &.login-required.access-required {
     &.down {
-      background-image: url('../assets/images/triangle.png');
+      background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/triangle.png');
       background-position: 0 0;
       transform: rotate(180deg);
     }
 
     &.up {
-      background-image: url('../assets/images/triangle.png');
+      background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/triangle.png');
       background-position: 0 0;
     }
 
     &.downmod {
-      background-image: url('../assets/images/selected-triangle.png');
+      background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/selected-triangle.png');
       background-position: 0 0;
       transform: rotate(180deg);
     }
 
     &.upmod {
-      background-image: url('../assets/images/selected-triangle.png');
+      background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/selected-triangle.png');
       background-position: 0 0;
     }
   }
