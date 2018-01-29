@@ -1,0 +1,42 @@
+{
+  "name": "reddit-css",
+  "version": "1.0.0",
+  "description": "The CSS for the Kleros Reddit page.",
+  "repository": "https://github.com/kleros/reddit-css",
+  "author": "Kleros",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "stylelint \"./src/**/*.scss\" --syntax scss",
+    "lint:fix": "stylelint --fix \"./src/**/*.scss\" --syntax scss",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "precommit": "yarn run lint",
+    "cz": "git-cz",
+    "start":
+      "yarn run build && node-sass-chokidar ./src/index.scss ./dist/index.css --output-style compressed --watch",
+    "build":
+      "node-sass-chokidar ./src/index.scss ./dist/index.css --output-style compressed && postcss ./dist/index.css --use autoprefixer -r"
+  },
+  "commitlint": {
+    "extends": ["@commitlint/config-conventional"]
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/prompt"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^6.0.2",
+    "@commitlint/config-conventional": "^6.0.2",
+    "@commitlint/prompt": "^6.0.2",
+    "autoprefixer": "^7.2.5",
+    "commitizen": "^2.9.6",
+    "husky": "^0.14.3",
+    "node-sass-chokidar": "^0.0.3",
+    "postcss-cli": "^4.1.1",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-order": "^0.8.0",
+    "stylelint-scss": "^2.2.0"
+  }
+}
