@@ -9,7 +9,7 @@ body {
 // General header area
 #header {
   background-color: #202129;
-  background-image: url('../assets/images/banner.png');
+  background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/82a9777b/assets/images/banner.png');
   background-repeat: no-repeat;
   background-size: 1680px 216px;
   border: none;
@@ -17,7 +17,7 @@ body {
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     & {
-      background-image: url('../assets/images/banner@2x.png');
+      background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/82a9777b/assets/images/banner@2x.png');
     }
   }
 
@@ -271,7 +271,7 @@ body {
 
   .users-online {
     background-color: #1a1b23;
-    background-image: url('../assets/images/subscribe-button.png');
+    background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/82a9777b/assets/images/subscribe-button.png');
     background-repeat: no-repeat;
     background-size: 425px 85px;
     border-radius: 5px;
