@@ -337,6 +337,7 @@ body {
       background: none;
       border: none;
       display: none;
+      font-size: 14px;
       height: 100%;
       left: 0;
       line-height: 38px;
@@ -377,6 +378,7 @@ body {
   .sidebox.submit {
     margin-bottom: 22.5px;
     margin-top: 19.5px - 12px;
+    text-transform: capitalize;
 
     .nub {
       display: none;
