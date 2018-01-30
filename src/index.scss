@@ -5,8 +5,6 @@ body {
 }
 
 /* Header */
-
-// General header area
 #header {
   background-color: #202129;
   background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/82a9777b/assets/images/banner.png');
@@ -21,25 +19,21 @@ body {
     }
   }
 
-  // Top part of header
   #sr-header-area {
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
     height: 26px;
     line-height: 26px;
 
-    // "My Subreddits"
     .dropdown.srdrop {
       padding-left: 12px;
     }
 
-    // Subreddit list
     .sr-list {
       margin-right: 56px;
       overflow: scroll;
     }
 
-    // Text
     span,
     a {
       color: #fff;
@@ -49,17 +43,14 @@ body {
     }
   }
 
-  // Edit subreddits link
   #sr-more-link {
     background: none;
   }
 
-  // Image to the left of "Hot"
   #header-img.default-header {
     display: none;
   }
 
-  // "Hot", "New", "Rising", etc
   #header-bottom-left {
     background-color: rgba(255, 255, 255, 0.1);
     bottom: 0;
@@ -67,12 +58,10 @@ body {
     position: absolute;
     width: 100%;
 
-    // "Kleros"
     .hover.pagename.redditname {
       display: none;
     }
 
-    // Tabs
     .tabmenu {
       bottom: 0;
       height: 100%;
@@ -114,7 +103,6 @@ body {
     }
   }
 
-  // Sign up/Log in
   #header-bottom-right {
     background: none;
     bottom: 0;
@@ -138,8 +126,6 @@ body {
 }
 
 /* Posts */
-
-// Posts container
 #siteTable {
   border: 1px solid rgba(127, 130, 166, 0.03);
   border-radius: 5px;
@@ -150,7 +136,6 @@ body {
   margin: 20px 373.5px + 20px 20px 20px;
   padding: 17.5px 41.5px 17.5px 8px;
 
-  // Post
   .thing {
     margin-bottom: 31px;
 
@@ -172,13 +157,11 @@ body {
     }
   }
 
-  // Likes container
   .midcol {
     margin-left: 12px;
     margin-right: 30px;
   }
 
-  // Likes counter
   .score {
     margin-top: 2px;
   }
@@ -199,7 +182,6 @@ body {
     }
   }
 
-  // Likes arrows
   .arrow {
     height: 21px;
     width: 22px;
@@ -231,12 +213,25 @@ body {
     }
   }
 
-  // Entry
+  .thumbnail {
+    height: 56px;
+    margin: 0;
+    width: 80px;
+
+    img {
+      max-width: none;
+      min-height: 56px;
+      min-width: 80px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
   .entry {
     padding-left: 22px;
   }
 
-  // Taglines
   .tagline {
     color: #b0b0b1;
     margin: 5px 0;
@@ -247,7 +242,6 @@ body {
     }
   }
 
-  // Share buttons
   .flat-list.buttons {
     color: #b0b0b1;
 
@@ -263,8 +257,6 @@ body {
 }
 
 /* Side Bar */
-
-// Side Bar container
 .side {
   margin: 20px 18.5px 0 0;
   padding-top: 104.5px - 7px;
@@ -450,8 +442,6 @@ body {
 }
 
 /* Footer */
-
-// Footer container
 .footer-parent {
   padding-top: 0;
 
