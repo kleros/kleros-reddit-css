@@ -29,8 +29,10 @@
   font-style: normal;
   font-weight: bold;
   /* stylelint-disable declaration-colon-newline-after, value-list-comma-newline-after, indentation */
-  src: url('../assets/fonts/metropolis-medium-webfont.woff2') format('woff2'),
-    url('../assets/fonts/metropolis-medium-webfont.woff') format('woff');
+  src: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/6e8d5cb5/assets/fonts/metropolis-medium-webfont.woff2')
+      format('woff2'),
+    url('https://cdn.rawgit.com/kleros/kleros-reddit-css/6e8d5cb5/assets/fonts/metropolis-medium-webfont.woff')
+      format('woff');
   /* stylelint-enable */
 }
 
