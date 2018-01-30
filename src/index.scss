@@ -4,131 +4,142 @@ body {
   font-family: 'Metropolis', sans-serif;
 }
 
+/* Header */
+
 // General header area
 #header {
   background-color: #202129;
-  background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/9a643043/assets/images/banner.png');
+  background-image: url('../assets/images/banner.png');
   background-repeat: no-repeat;
-  background-size: 1100px 216px;
+  background-size: 1680px 216px;
   border: none;
   height: 216px;
-}
 
-// Top part of header
-#sr-header-area {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: none;
-  height: 26px;
-  line-height: 26px;
-
-  // "My Subreddits"
-  .dropdown.srdrop {
-    padding-left: 12px;
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    & {
+      background-image: url('../assets/images/banner@2x.png');
+    }
   }
 
-  // Subreddit list
-  .sr-list {
-    margin-right: 56px;
+  // Top part of header
+  #sr-header-area {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    height: 26px;
+    line-height: 26px;
+
+    // "My Subreddits"
+    .dropdown.srdrop {
+      padding-left: 12px;
+    }
+
+    // Subreddit list
+    .sr-list {
+      margin-right: 56px;
+      overflow: scroll;
+    }
+
+    // Text
+    span,
+    a {
+      color: #fff;
+      font-size: 9px;
+      font-weight: lighter;
+      letter-spacing: 1px;
+    }
   }
 
-  // Text
-  span,
-  a {
-    color: #fff;
-    font-size: 9px;
-    font-weight: lighter;
-    letter-spacing: 1px;
+  // Edit subreddits link
+  #sr-more-link {
+    background: none;
   }
-}
 
-// Edit subreddits link
-#sr-more-link {
-  background: none;
-}
-
-// Image to the left of "Hot"
-#header-img.default-header {
-  display: none;
-}
-
-// "Hot", "New", "Rising", etc
-#header-bottom-left {
-  background-color: rgba(255, 255, 255, 0.1);
-  bottom: 0;
-  height: 50px;
-  position: absolute;
-  width: 100%;
-
-  // "Kleros"
-  .hover.pagename.redditname {
+  // Image to the left of "Hot"
+  #header-img.default-header {
     display: none;
   }
 
-  // Tabs
-  .tabmenu {
+  // "Hot", "New", "Rising", etc
+  #header-bottom-left {
+    background-color: rgba(255, 255, 255, 0.1);
     bottom: 0;
-    height: 100%;
-    left: 96px;
-    line-height: 50px;
-    margin: 0;
-    overflow: scroll;
+    height: 50px;
     position: absolute;
+    width: 100%;
 
-    li {
-      display: inline-block;
-      font-size: 13px;
-      letter-spacing: 1px;
+    // "Kleros"
+    .hover.pagename.redditname {
+      display: none;
+    }
+
+    // Tabs
+    .tabmenu {
+      bottom: 0;
+      height: 100%;
+      left: 96px;
+      line-height: 50px;
       margin: 0;
-      min-width: 52px;
-      padding: 0 10px;
-      text-align: center;
-      text-transform: uppercase;
+      overflow: scroll;
+      position: absolute;
 
-      a {
-        background: none;
-        color: #fff;
+      li {
         display: inline-block;
-        font-weight: normal;
-        height: 100%;
-        padding: 0;
-        width: 100%;
-      }
-
-      &:hover,
-      &.selected {
-        background-color: rgba(255, 255, 255, 0.1);
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin: 0;
+        min-width: 52px;
+        padding: 0 10px;
+        text-align: center;
+        text-transform: uppercase;
 
         a {
-          border: none;
+          background: none;
+          color: #fff;
+          display: inline-block;
+          font-weight: normal;
+          height: 100%;
+          padding: 0;
+          width: 100%;
+        }
+
+        &:hover,
+        &.selected {
+          background-color: rgba(255, 255, 255, 0.1);
+
+          a {
+            border: none;
+          }
         }
       }
     }
   }
-}
 
-// Sign up/Log in
-#header-bottom-right {
-  background: none;
-  bottom: 0;
-  height: 50px;
-  line-height: 50px;
-  padding-bottom: 0;
-  padding-right: 22px;
-  padding-top: 0;
-  position: absolute;
-
-  a {
-    color: #fff;
-    font-size: 13px;
-    font-weight: lighter;
-  }
-
-  .message-count {
+  // Sign up/Log in
+  #header-bottom-right {
     background: none;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
+    padding-bottom: 0;
+    padding-right: 22px;
+    padding-top: 0;
+    position: absolute;
+
+    a {
+      color: #fff;
+      font-size: 13px;
+      font-weight: lighter;
+    }
+
+    .message-count {
+      background: none;
+    }
   }
 }
 
-// Posts
+/* Posts */
+
+// Posts container
 #siteTable {
   border: 1px solid rgba(127, 130, 166, 0.03);
   border-radius: 5px;
@@ -136,113 +147,294 @@ body {
   box-shadow: 0 0 6px 0 rgba(71, 82, 93, 0.09), 0 0 1px 0 rgba(77, 78, 90, 0.08),
     0 2px 0 0 rgba(71, 82, 93, 0.09);
   /* stylelint-enable */
-  margin: 20px 318.5px + 20px 20px 20px;
-  padding: 16px 40px 16px 20px;
-}
+  margin: 20px 373.5px + 20px 20px 20px;
+  padding: 17.5px 41.5px 17.5px 8px;
 
-// Post
-.thing {
-  margin-bottom: 31px;
+  // Post
+  .thing {
+    margin-bottom: 31px;
 
-  .rank {
-    margin-top: 24.5px;
+    .rank {
+      margin-right: 3.5px;
+      margin-top: 24.5px;
+    }
+
+    .title {
+      color: #052e69;
+      font-size: 18px;
+      font-weight: lighter;
+
+      &:visited {
+        color: #052e69;
+        font-weight: bold;
+      }
+    }
   }
 
-  .title {
-    color: #052e69;
-    font-size: 22px;
-    font-weight: lighter;
+  // Likes container
+  .midcol {
+    margin-left: 12px;
+    margin-right: 30px;
+  }
 
-    &:visited {
-      color: #052e69;
+  // Likes counter
+  .score {
+    margin-top: 2px;
+
+    .link &.likes {
+      color: #1a1b23;
+    }
+  }
+
+  // Likes arrows
+  .arrow {
+    height: 21px;
+    width: 22px;
+
+    &.login-required.access-required {
+      &.down {
+        background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/triangle.png');
+        background-position: 0 0;
+        transform: rotate(180deg);
+      }
+
+      &.up {
+        background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/triangle.png');
+        background-position: 0 0;
+      }
+
+      &.downmod,
+      &.down:hover {
+        background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/selected-triangle.png');
+        background-position: 0 0;
+        transform: rotate(180deg);
+      }
+
+      &.upmod,
+      &.up:hover {
+        background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/selected-triangle.png');
+        background-position: 0 0;
+      }
+    }
+  }
+
+  // Entry
+  .entry {
+    padding-left: 22px;
+  }
+
+  // Taglines
+  .tagline {
+    color: #b0b0b1;
+    margin: 5px 0;
+
+    a.author {
+      color: #1a1b23;
+      font-weight: bold;
+    }
+  }
+
+  // Share buttons
+  .flat-list.buttons {
+    color: #b0b0b1;
+
+    li a {
+      font-weight: normal;
+    }
+
+    .bylink.comments {
+      color: #1a1b23;
       font-weight: bold;
     }
   }
 }
 
-// Likes container
-.midcol {
-  margin-left: 12px;
-  margin-right: 30px;
-}
+/* Side Bar */
 
-// Likes counter
-.score {
-  margin-top: 2px;
-
-  .link &.likes {
-    color: #1a1b23;
-  }
-}
-
-// Likes arrows
-.arrow {
-  height: 21px;
-  width: 22px;
-
-  &.login-required.access-required {
-    &.down {
-      background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/triangle.png');
-      background-position: 0 0;
-      transform: rotate(180deg);
-    }
-
-    &.up {
-      background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/triangle.png');
-      background-position: 0 0;
-    }
-
-    &.downmod,
-    &.down:hover {
-      background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/selected-triangle.png');
-      background-position: 0 0;
-      transform: rotate(180deg);
-    }
-
-    &.upmod,
-    &.up:hover {
-      background-image: url('https://cdn.rawgit.com/kleros/kleros-reddit-css/bf3db805/assets/images/selected-triangle.png');
-      background-position: 0 0;
-    }
-  }
-}
-
-// Entry
-.entry {
-  padding-left: 22px;
-}
-
-// Taglines
-.tagline {
-  color: #b0b0b1;
-  margin: 5px 0;
-
-  a.author {
-    color: #1a1b23;
-    font-weight: bold;
-  }
-}
-
-// Share buttons
-.flat-list.buttons {
-  color: #b0b0b1;
-
-  li a {
-    font-weight: normal;
-  }
-
-  .bylink.comments {
-    color: #1a1b23;
-    font-weight: bold;
-  }
-}
-
-// Sidebar TODO
+// Side Bar container
 .side {
   margin: 20px 18.5px 0 0;
+  padding-top: 104.5px - 7px;
+  position: relative;
+  width: 355px;
+
+  .redditname {
+    left: 33px;
+    position: absolute;
+    top: 15px;
+    z-index: 1;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .users-online {
+    background-color: #1a1b23;
+    background-image: url('../assets/images/subscribe-button.png');
+    background-repeat: no-repeat;
+    background-size: 425px 85px;
+    border-radius: 5px;
+    color: #fff;
+    height: 85px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 355px;
+
+    span {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: lighter;
+      margin-top: 38px;
+
+      &.number {
+        margin-left: 33px - 21px;
+      }
+    }
+  }
+
+  .subscribers {
+    color: #fff;
+    left: 33px;
+    position: absolute;
+    top: 56px;
+    z-index: 1;
+  }
+
+  .fancy-toggle-button.subscribe-button.toggle {
+    background-color: #da0e32;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 0 #991739;
+    height: 39px;
+    margin: 0;
+    position: absolute;
+    right: 21px;
+    text-align: center;
+    top: 23px;
+    width: 130px;
+    z-index: 1;
+
+    &:active {
+      box-shadow: 0 1px 0 0 #991739;
+    }
+
+    .option.add,
+    .option.remove {
+      background: none;
+      border: none;
+      display: none;
+      height: 100%;
+      left: 0;
+      line-height: 38px;
+      outline: none;
+      padding: 0;
+      position: absolute;
+      text-transform: capitalize;
+      top: 0;
+      width: 100%;
+
+      &.active {
+        display: inline-block;
+      }
+    }
+  }
+
+  #search {
+    input[type='text'] {
+      background-color: #fff;
+      border: 1px solid rgba(151, 151, 151, 0.21);
+      border-radius: 6px;
+      box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.05);
+      box-sizing: border-box;
+      height: 46px;
+      width: 357px;
+
+      &:hover {
+        border: 1px solid rgba(151, 151, 151, 0.4);
+      }
+
+      &:focus {
+        border: 1px solid rgba(151, 151, 151, 0.6);
+        outline: none;
+      }
+    }
+  }
+
+  .sidebox.submit {
+    margin-bottom: 22.5px;
+    margin-top: 19.5px - 12px;
+
+    .nub {
+      display: none;
+    }
+
+    &.submit-link {
+      float: left;
+      width: 50%;
+    }
+
+    &.submit-text {
+      float: right;
+      width: 50%;
+
+      .morelink {
+        float: right;
+      }
+    }
+
+    .morelink {
+      background-color: #052e69;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 2px 0 0 #042054;
+      height: 39px;
+      line-height: 39px;
+      width: 169px;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+
+  .titlebox {
+    background-color: #fff;
+    border: 1px solid rgba(127, 130, 166, 0.03);
+    border-radius: 5px;
+    /* stylelint-disable declaration-colon-newline-after, value-list-comma-newline-after, indentation */
+    box-shadow: 0 0 6px 0 rgba(71, 82, 93, 0.09),
+      0 0 1px 0 rgba(77, 78, 90, 0.08), 0 2px 0 0 rgba(71, 82, 93, 0.09);
+    /* stylelint-enable */
+    box-sizing: border-box;
+    margin-bottom: 21.5px;
+    margin-top: 61px + 22.5px;
+    padding: 15px;
+    width: 356px;
+  }
+
+  .spacer {
+    .title {
+      margin-bottom: 5px;
+    }
+
+    .content {
+      background-color: #fff;
+      border: 1px solid rgba(127, 130, 166, 0.03);
+      border-radius: 5px;
+      /* stylelint-disable declaration-colon-newline-after, value-list-comma-newline-after, indentation */
+      box-shadow: 0 0 6px 0 rgba(71, 82, 93, 0.09),
+        0 0 1px 0 rgba(77, 78, 90, 0.08), 0 2px 0 0 rgba(71, 82, 93, 0.09);
+      /* stylelint-enable */
+      box-sizing: border-box;
+      margin-bottom: 22.5px;
+    }
+  }
 }
 
-// Footer
+/* Footer */
+
+// Footer container
 .footer-parent {
   padding-top: 0;
 
@@ -252,5 +444,16 @@ body {
 
   p.bottommenu {
     color: #b0b0b1;
+  }
+
+  .footer.rounded {
+    background-color: #fff;
+    border: 1px solid rgba(127, 130, 166, 0.03);
+    border-radius: 5px;
+    /* stylelint-disable declaration-colon-newline-after, value-list-comma-newline-after, indentation */
+    box-shadow: 0 0 6px 0 rgba(71, 82, 93, 0.09),
+      0 0 1px 0 rgba(77, 78, 90, 0.08), 0 2px 0 0 rgba(71, 82, 93, 0.09);
+    /* stylelint-enable */
+    box-sizing: border-box;
   }
 }
