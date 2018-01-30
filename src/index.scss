@@ -155,6 +155,7 @@ body {
     margin-bottom: 31px;
 
     .rank {
+      color: #b0b0b1;
       margin-right: 3.5px;
       margin-top: 24.5px;
     }
@@ -180,9 +181,21 @@ body {
   // Likes counter
   .score {
     margin-top: 2px;
+  }
 
-    .link &.likes {
-      color: #1a1b23;
+  .link {
+    .score {
+      &.likes {
+        color: #1a1b23;
+      }
+
+      &.dislikes {
+        color: #991739;
+      }
+
+      &.unvoted {
+        color: #b0b0b1;
+      }
     }
   }
 
